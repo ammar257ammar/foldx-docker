@@ -10,6 +10,7 @@ COPY foldx.sh .
 COPY rotabase.txt .
 
 RUN chmod 755 foldx
+RUN chmod 755 foldx.sh
 
 RUN ls
 

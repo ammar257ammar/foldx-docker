@@ -3,3 +3,7 @@ foldx5Linux64.tar.gz
 *.gz
 Pod0.yaml
 Pod1.yaml
+Pods/
+Pods/*
+Jobs/
+Jobs/*

@@ -42,5 +42,5 @@ for f in *; do
 done
 
 
-
+wait
 

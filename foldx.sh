@@ -17,7 +17,7 @@ elif [ "$COMMAND" == "BuildModel" ]; then
 
 	cd $PDB/input
 
-	/foldx/foldx --command=BuildModel --pdb=${PDB}_protein_Repair.pdb --mutant-file=individual_list.txt --ionStrength=0.05 --pH=7 --water=CRYSTAL --vdwDesign=2 --output-dir=../output --out-pdb=true --pdbHydrogens=false --numberOfRuns=1 > ../output/log.txt   
+	/foldx/foldx --command=BuildModel --pdb=${PDB}_protein_Repair.pdb --mutant-file=individual_list.txt --ionStrength=0.05 --pH=7 --water=CRYSTAL --vdwDesign=2 --output-dir=../output --out-pdb=true --pdbHydrogens=false --numberOfRuns=3 > ../output/log.txt   
 
 	cd ../..
 

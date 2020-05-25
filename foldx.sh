@@ -17,7 +17,21 @@ elif [ "$COMMAND" == "BuildModel" ]; then
 
 	cd $PDB/input
 
-	/foldx/foldx --command=BuildModel --pdb=${PDB}_protein_Repair.pdb --mutant-file=individual_list.txt --ionStrength=0.05 --pH=7 --water=CRYSTAL --vdwDesign=2 --output-dir=../output --out-pdb=true --pdbHydrogens=false --numberOfRuns=1 > ../output/log.txt   
+	cp ${PDB}_protein_Repair.pdb ../output/${PDB}_protein_Repair_WT.pdb
+
+	/foldx/foldx --command=BuildModel --pdb=${PDB}_protein_Repair.pdb --mutant-file=individual_list.txt --ionStrength=0.05 --pH=7 --water=CRYSTAL --vdwDesign=2 --output-dir=../output --out-pdb=true --pdbHydrogens=false --numberOfRuns=1 > ../output/log.txt  
+
+	cd ../output
+
+	for p in *.pdb; do
+
+		folder="${p%.*}"
+
+		mkdir $folder
+	
+		cp ${p} ${folder}/${p}
+
+	done 
 
 	cd ../..
 

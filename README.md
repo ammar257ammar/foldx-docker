@@ -1,4 +1,4 @@
-# FoldX docker
+# FoldX Docker
 
 This repository is part of the "Pocket SNPs effect on protein-ligand Binding Affinity Prediction (PSBAP)" project and it is a submodule of the main repository 
 

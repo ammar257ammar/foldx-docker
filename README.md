@@ -1,14 +1,14 @@
-# FoldX Docker
+# PSnpBind FoldX Docker
 
-This repository is part of the "Pocket SNPs effect on protein-ligand Binding Affinity Prediction (PSBAP)" project and it is a submodule of the main repository 
+This repository is part of the "Pocket SNPs Effect On Protein-Ligand Binding Affinity Project (PSnpBind)" project and it is a submodule of the main repository 
 
 https://github.com/ammar257ammar/pocket-snps-effect-binding-affinity
 
-Please prepare and build the docker using the following instruction and refer back to the previous link for proper usage in the context of PSBAP project.
+Please prepare and build the docker using the following instruction and refer back to the previous link for proper usage in the context of PSnpBind project.
 
-### First, clone this repository, then follow next! 
+### First, clone this repository.
 
-### Download FoldX
+### Second, download FoldX
 
 1. Register to the FoldX website for academic license for FoldX software: 
 
@@ -26,11 +26,11 @@ Please prepare and build the docker using the following instruction and refer ba
 
 7. Unpack the downloaded file and move the "foldx" file to the cloned repository folder (put it next to Dockerfile)
 
-8. Go to the cloned repository folder "psbap-foldx" with "cd" command and follow the instructions in the next section
+8. Go to the cloned repository folder "psnpbind-foldx" with "cd" command and follow the instructions in the next section
 
 ### Build the Docker image
 
-docker build -t psbap-foldx .
+docker build -t psnpbind-foldx .
 
 #### Now you are ready! 
 

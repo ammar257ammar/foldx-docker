@@ -27,7 +27,7 @@ elif [ "$COMMAND" == "BuildModel" ]; then
 
 		folder="${p%.*}"
 
-		mkdir $folder
+		mkdir -p $folder
 	
 		cp ${p} ${folder}/${p}
 

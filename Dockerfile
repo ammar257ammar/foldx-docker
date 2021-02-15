@@ -13,14 +13,14 @@ RUN     apt-get update \
 
 COPY foldx .
 COPY foldx.sh .
-COPY psbap-foldx-0.0.1-SNAPSHOT-jar-with-dependencies.jar .
+COPY psnpbind-concurrency-foldx-1.0-Stable-jar-with-dependencies.jar .
 COPY rotabase.txt .
 
 RUN chmod 755 foldx
 RUN chmod 755 foldx.sh
-RUN chmod 755 psbap-foldx-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+RUN chmod 755 psnpbind-concurrency-foldx-1.0-Stable-jar-with-dependencies.jar
 
 RUN ls
 
-ENTRYPOINT ["java", "-jar", "/foldx/psbap-foldx-0.0.1-SNAPSHOT-jar-with-dependencies.jar"]
+ENTRYPOINT ["java", "-jar", "/foldx/psnpbind-concurrency-foldx-1.0-Stable-jar-with-dependencies.jar"]
 CMD ["-h"]

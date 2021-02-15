@@ -1,13 +1,1 @@
-foldxLinux64.tar_.gz
-foldx5Linux64.tar.gz
 *.gz
-Pod0.yaml
-Pod1.yaml
-Pods/
-Pods/*
-Jobs/
-Jobs/*
-misc/
-foldx-old.sh
-README-bkp.md
-foldx
